@@ -101,7 +101,7 @@ def insert_store_status_into_store_status_table(conn):
 
 
 def pull_data_every_hour():
-    print('Pulling Data from datasource...')
+    print('Pulling Data from datasource. It may take few minutes depending upon size of csv file')
     # Connect to SQLite database
     conn = sqlite3.connect('data/database.db')
     
@@ -123,6 +123,8 @@ def pull_data_every_hour():
 
 if __name__ == '__main__':
     print("Cron Service is Running...")
+    # call this function at top to pull data initial otherwise schedule will call after 1 hour
+    pull_data_every_hour()
     schedule.every(1).hours.do(pull_data_every_hour)
     # Run the scheduled jobs in an infinite loop
     while True:

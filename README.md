@@ -15,7 +15,7 @@ Python 3.x installed on your machine.
 ##### Create a virtual environment:
 ```python -m venv .```
 ##### Activate virtual enviroment:
-```source venv/bin/activate```
+```source bin/activate```
 ##### Install project dependencies:
 ```pip install -r requirements.txt```
 ##### Put static csv files inside data folder
