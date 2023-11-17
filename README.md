@@ -1,6 +1,9 @@
 # Store Monitoring
 For monitoring stores uptime and downtime.
 
+## Demo Video
+[click here](https://drive.google.com/file/d/1o1QVin4CtYVMklajlI5zZxZ-YipDC90b/view?usp=sharing)
+
 ## Prerequisites
 Python 3.x installed on your machine.
 

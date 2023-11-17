@@ -183,7 +183,7 @@ if __name__ == '__main__':
     all_store = fetch_distinct_store(cursor)
     length = len(all_store)
     output = []
-    for i in range(len(all_store[0:100])):
+    for i in range(len(all_store[0:length])):
         r = analysis_for_store(all_store[i], i, cursor)
         output.append(r)
     
