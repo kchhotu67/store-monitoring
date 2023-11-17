@@ -80,7 +80,6 @@ def insert_report_id(report_id):
         return False
 
 if __name__ == '__main__':
-
     # create store_report table if doesn't exits
     create_report_table()
 

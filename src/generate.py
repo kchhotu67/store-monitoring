@@ -173,6 +173,7 @@ def fetch_distinct_store(cursor):
 if __name__ == '__main__':
     # report id will be passed from /trigger_report api
     report_id = sys.argv[1] if len(sys.argv) > 1 else 'output'
+    print(f'Generating report for report_id = {report_id}')
 
     # create database connection
     conn = sqlite3.connect('data/database.db')
@@ -182,7 +183,7 @@ if __name__ == '__main__':
     all_store = fetch_distinct_store(cursor)
     length = len(all_store)
     output = []
-    for i in range(len(all_store[0:length])):
+    for i in range(len(all_store[0:100])):
         r = analysis_for_store(all_store[i], i, cursor)
         output.append(r)
     

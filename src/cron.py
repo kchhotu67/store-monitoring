@@ -123,7 +123,7 @@ def pull_data_every_hour():
 
 if __name__ == '__main__':
     print("Cron Service is Running...")
-    schedule.every(1).minutes.do(pull_data_every_hour)
+    schedule.every(1).hours.do(pull_data_every_hour)
     # Run the scheduled jobs in an infinite loop
     while True:
         schedule.run_pending()

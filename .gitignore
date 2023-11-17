@@ -5,3 +5,5 @@ lib/
 
 data/*.db
 data/*.csv
+output/*.csv
+pyvenv.cfg
